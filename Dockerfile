@@ -1,7 +1,7 @@
 FROM php:8.2.13-cli-bullseye
 LABEL authors="Heelie"
 
-RUN sed -i 's#http://deb.debian.org#https://mirrors.aliyun.com#g' /etc/apt/sources.list
+# RUN sed -i 's#http://deb.debian.org#https://mirrors.aliyun.com#g' /etc/apt/sources.list
 RUN apt update && apt install -y python3 python3-dev
 
 WORKDIR /opt
